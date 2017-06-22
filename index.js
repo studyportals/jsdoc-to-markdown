@@ -4,10 +4,13 @@
  * @module @studyportals/jsdoc-to-markdown
  * @example
  * ```Shell
- * node ./bin/jsdoc-to-markdown
+ * # node
+ * node ./bin/jsdoc2md
+ * jsdoc2md
  * ```
  *
  * ```JavaScript
+ * # JavaScript
  * const JsdocToMarkdown = require('@studyportals/jsdoc-to-markdown');
  * JsdocToMarkdown();
  * ```

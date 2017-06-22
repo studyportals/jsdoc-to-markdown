@@ -1,19 +1,19 @@
 {
   "name": "@studyportals/jsdoc-to-markdown",
-  "version": "0.0.0-1",
+  "version": "0.0.0-8",
   "description": "Generate `README.md` based on package.json and corresponding `*.js` files.",
   "main": "index.js",
   "directories": {
     "bin": "./bin"
   },
   "bin": {
-    "jsdoc-to-markdown": "bin/jsdoc-to-markdown.js"
+    "jsdoc2md": "bin/jsdoc2md.js"
   },
   "scripts": {
     "build": "npm --no-git-tag-version version prerelease",
     "test": "mocha **/*.test.js",
     "preversion": "npm prune && npm install && npm test",
-    "version": "node bin/jsdoc-to-markdown && git add -A"
+    "version": "node bin/jsdoc2md && git add -A"
   },
   "repository": {
     "type": "git",
