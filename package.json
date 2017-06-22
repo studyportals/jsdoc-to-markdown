@@ -1,0 +1,44 @@
+{
+  "name": "@studyportals/jsdoc-to-markdown",
+  "version": "1.0.0",
+  "description": "Generate `README.md` based on package.json and corresponding `*.js` files.",
+  "main": "index.js",
+  "directories": {
+    "bin": "./bin"
+  },
+  "bin": {
+    "jsdoc2md": "bin/jsdoc2md.js"
+  },
+  "scripts": {
+    "build": "npm --no-git-tag-version version prerelease",
+    "test": "mocha **/*.test.js",
+    "preversion": "npm prune && npm install && npm test",
+    "version": "node bin/jsdoc2md && git add -A"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/studyportals/jsdoc-to-markdown.git"
+  },
+  "author": "StudyPortals B.V.",
+  "contributors": [
+    {
+      "name": "Danko Adamczyk",
+      "email": "danko@studyportals.com",
+      "url": "https://github.com/CZYK"
+    }
+  ],
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/studyportals/jsdoc-to-markdown/issues"
+  },
+  "homepage": "https://github.com/studyportals/jsdoc-to-markdown#readme",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "chai-files": "^1.4.0",
+    "globby": "^6.1.0",
+    "mocha": "^3.4.2"
+  },
+  "dependencies": {
+    "jsdoc-to-markdown": "^3.0.0"
+  }
+}
