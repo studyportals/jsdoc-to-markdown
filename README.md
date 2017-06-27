@@ -1,4 +1,4 @@
-# @studyportals/jsdoc-to-markdown@v1.0.1-0
+# @studyportals/jsdoc-to-markdown@v1.0.1
 
 <a href="https://www.npmjs.com/package/@studyportals/jsdoc-to-markdown" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/@studyportals/jsdoc-to-markdown.svg?style=flat" alt="NPM version" /></a>
 <a href="https://www.npmjs.com/package/@studyportals/jsdoc-to-markdown" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/@studyportals/jsdoc-to-markdown.svg?style=flat" alt="NPM license" /></a>
@@ -38,4 +38,4 @@ These properties from the package.json are used to build the documentation:
 **Kind**: Exported function  
 **Returns**: <code>Date</code> - The date when README.md is generated.  
 
-_README.md generated at: Fri Jun 23 2017 09:43:50 GMT+0800 (China Standard Time)_
+_README.md generated at: Tue Jun 27 2017 09:53:40 GMT+0800 (China Standard Time)_
