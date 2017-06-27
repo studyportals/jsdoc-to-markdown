@@ -4,13 +4,14 @@
  * @module @studyportals/jsdoc-to-markdown
  * @example
  * ```Shell
- * # node
- * node ./bin/jsdoc2md
- * jsdoc2md
+ * # When installed as a dependency
+ * sh node_modules./bin/jsdoc2md
+ *
+ * # When installed globally
+ * sh jsdoc2md
  * ```
  *
  * ```JavaScript
- * # JavaScript
  * const JsdocToMarkdown = require('@studyportals/jsdoc-to-markdown');
  * JsdocToMarkdown();
  * ```
@@ -40,14 +41,14 @@ const JsdocToMarkdown = () =>{
 	const files = [], lines = [];
 
 	// Title
-	lines.push(`# ${pjson.name}@${pjson.version}`);
+	lines.push(`# ${pjson.name}@v${pjson.version}`);
 	lines.push(``);
 
 	// Labels
 	const npmjsUrl = `https://www.npmjs.com/package/${pjson.name}`;
 	lines.push(`<a href="${npmjsUrl}" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/v/${pjson.name}.svg?style=flat" alt="NPM version" /></a>`);
-	lines.push(`<a href="${npmjsUrl}" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/dm/${pjson.name}.svg?style=flat" alt="NPM downloads" /></a>`);
 	lines.push(`<a href="${npmjsUrl}" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/l/${pjson.name}.svg?style=flat" alt="NPM license" /></a>`);
+	lines.push(`<a href="${npmjsUrl}" title="View this project on NPM" target="_blank"><img src="https://img.shields.io/npm/dm/${pjson.name}.svg?style=flat" alt="NPM downloads" /></a>`);
 
 	if(pjson.repository && pjson.repository.url){
 		const usernameRepo = pjson.repository.url.split('/').slice(-2).join('/').replace('.git', '');
