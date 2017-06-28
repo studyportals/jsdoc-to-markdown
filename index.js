@@ -12,12 +12,14 @@
  *   }
  * }
  * ```
+ *
  * Now, project documentation is generated like so:
  *
  * ```sh
  * $ npm run docs
  * ```
- * In node
+ *
+ * In node:
  * ```JavaScript
  * const JsdocToMarkdown = require('@studyportals/jsdoc-to-markdown');
  * JsdocToMarkdown();
