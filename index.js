@@ -3,14 +3,21 @@
 /**
  * @module @studyportals/jsdoc-to-markdown
  * @example
- * ```Shell
- * # When installed as a dependency
- * sh node_modules./bin/jsdoc2md
  *
- * # When installed globally
- * sh jsdoc2md
+ * In the `"scripts"` section of `package.json`, add a `docs` task. For example:
+ * ```json
+ * {
+ *   "scripts": {
+ *     "docs": "jsdoc2md"
+ *   }
+ * }
  * ```
+ * Now, project documentation is generated like so:
  *
+ * ```sh
+ * $ npm run docs
+ * ```
+ * In node
  * ```JavaScript
  * const JsdocToMarkdown = require('@studyportals/jsdoc-to-markdown');
  * JsdocToMarkdown();

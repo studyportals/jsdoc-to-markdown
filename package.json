@@ -1,6 +1,6 @@
 {
   "name": "@studyportals/jsdoc-to-markdown",
-  "version": "1.0.1",
+  "version": "1.0.2-0",
   "description": "Generate `README.md` based on package.json and corresponding `*.js` files.",
   "main": "index.js",
   "directories": {
